@@ -1,0 +1,72 @@
+.hidden-header {
+  position: absolute;
+
+  visibility: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  color: $background-color;
+  margin: 0px;
+  padding: 0px;
+}
+
+.benefits-section {
+  display: block;
+
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.benefits-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  width: 270px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.benefits-item {
+  display: block;
+
+  width: 270px;
+
+  margin-right: 30px;
+
+  &:hover,
+  &:focus {
+    display: block;
+    fill: $accent-color;
+  }
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-text {
+  width: 270px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  margin-bottom: 0px;
+}
+
+.benefits-icons {
+  width: 70px;
+  height: 70px;
+
+  background-color: $buttons-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px 25px 100px;
+}
+
+.benefits-element:not(:last-child) {
+  padding: 0px;
+}

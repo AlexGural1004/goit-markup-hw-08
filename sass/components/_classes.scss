@@ -1,0 +1,47 @@
+.classes-list {
+  position: relative;
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.classes-element {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 380px;
+  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    display: flex;
+  }
+}
+
+.classes-section {
+  padding-bottom: 94px;
+}
+
+.classes-overlay {
+  position: absolute;
+
+  width: 370px;
+  height: 70px;
+
+  bottom: 0;
+  text-align: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.classes-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $h1-color;
+  margin-top: 27px;
+}
