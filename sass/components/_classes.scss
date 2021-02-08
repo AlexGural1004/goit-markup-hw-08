@@ -1,3 +1,12 @@
+.classes-section {
+  padding-bottom: 94px;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .classes-list {
   position: relative;
   display: flex;
@@ -18,10 +27,6 @@
     margin-right: 30px;
     display: flex;
   }
-}
-
-.classes-section {
-  padding-bottom: 94px;
 }
 
 .classes-overlay {

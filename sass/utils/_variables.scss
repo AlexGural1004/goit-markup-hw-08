@@ -96,3 +96,13 @@ a {
   outline-width: 0px !important;
   outline-color: none !important;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+}
