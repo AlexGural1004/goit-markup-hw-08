@@ -65,15 +65,12 @@
 }*/
 
 .hero-section {
-  height: 400px;
-
-  background-color: $background-hero;
-  text-align: center;
-
-  margin: 0 auto;
-
   @media screen and (min-width: 480px) {
     width: 480px;
+    height: 400px;
+    margin: 0;
+    background-color: $background-hero;
+    text-align: center;
   }
   @media screen and (min-width: 768px) {
     height: 400px;
@@ -86,8 +83,8 @@
 }
 
 .hero-container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-overlay {
@@ -122,22 +119,23 @@
 }
 
 .hero-header {
-  width: 360px;
-  height: 84px;
-  padding-top: 118px;
-  padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-
+  @media screen and (min-width: 480px) {
+    width: 360px;
+    height: 84px;
+    padding-top: 118px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     height: 120px;

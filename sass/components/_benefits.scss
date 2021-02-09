@@ -86,8 +86,11 @@
 }
 
 .benefits-section {
-  padding-bottom: 60px;
-  padding-top: 60px;
+  @media screen and (min-width: 480px) {
+    margin: 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -95,20 +98,20 @@
 }
 
 .benefits-header {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
-  //width: 270px;
-  width: 450px;
-  margin-right: 0px;
-  padding-right: 0px;
-
-  @media screen and (min-width: 748px) {
+  @media screen and (min-width: 480px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    width: 450px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  @media screen and (min-width: 768px) {
     width: 354px;
     text-align: left;
   }
@@ -118,15 +121,14 @@
   }
 }
 .benefits-item {
-  //width: 270px;
-  width: 450px;
-
   &:hover,
   &:focus {
     fill: $accent-color;
   }
-
-  @media screen and (min-width: 748px) {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
     width: 354px;
     @media screen and (min-width: 1200px) {
       width: 270px;
@@ -135,14 +137,14 @@
 }
 
 .benefits-text {
-  //width: 270px;
-  width: 450px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
 
-  font-size: 14px;
-  line-height: 1.71;
-  margin-bottom: 0px;
-
-  @media screen and (min-width: 748px) {
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
     width: 354px;
   }
   @media screen and (min-width: 1200px) {
@@ -151,38 +153,44 @@
 }
 
 .benefits-icons {
-  width: 70px;
-  height: 70px;
-
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 70px;
+    padding: 25px 0;
+  }
   background-color: $buttons-color;
   border-radius: 4px;
   margin-bottom: 30px;
-  //padding: 25px 100px 25px 100px;
-  padding: 25px 190px 25px 190px;
 
-  @media screen and (min-width: 748px) {
-    padding: 25px 142px 25px 142px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 25px 100px 25px 100px;
+    width: 270px;
   }
 }
 
 .benefits-element:not(:last-child) {
-  padding: 0px;
-  margin-bottom: 30px;
-  @media screen and (min-width: 748px) {
+  @media screen and (min-width: 480px) {
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
     margin-bottom: unset;
   }
 }
 
 .benefits-section > .container {
-  width: 480px;
-
-  @media screen and (min-width: 748px) {
-    width: 748px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
     margin: 0;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+    margin: 0;
+    padding: 0 15px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
@@ -200,7 +208,7 @@
   }
 }
 .benefits-element {
-  @media screen and (min-width: 748px) {
+  @media screen and (min-width: 768px) {
     display: block;
     margin-left: 30px;
   }

@@ -1,9 +1,11 @@
 .classes-section {
-  padding-bottom: 94px;
-  display: none;
-
+  @media screen and (min-width: 480px) {
+    padding-bottom: 94px;
+    display: none;
+  }
   @media screen and (min-width: 1200px) {
     display: block;
+    width: 1200px;
   }
 }
 
@@ -49,4 +51,8 @@
   text-transform: uppercase;
   color: $h1-color;
   margin-top: 27px;
+}
+.classes-section .container {
+  width: 1170px;
+  margin: 0;
 }
