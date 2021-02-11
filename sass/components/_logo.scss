@@ -1,4 +1,5 @@
 .logo {
+  display: block;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -8,12 +9,17 @@
   margin-left: 15px;
   margin-right: 93px;
 
+  @media screen and (max-width: 747px) {
+    margin-top: 16px;
+  }
+
   &-color {
     color: $logo-color;
     font-size: 26px;
     line-height: 1.19;
   }
 }
+
 .logo-color-footer {
   color: $h1-color;
   font-size: 26px;
