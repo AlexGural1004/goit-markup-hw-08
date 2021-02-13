@@ -40,9 +40,8 @@
 }
 
 .header-link {
-  // position: relative;
+  position: relative;
   display: block;
-
   font-weight: 600;
   font-family: Roboto;
   font-style: normal;
@@ -54,18 +53,18 @@
   margin-top: 0;
   margin-bottom: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  &:hover {
+    color: #2196f3;
+  }
   @media screen and (min-width: 768px) {
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  padding-top: 32px;
   padding-bottom: 32px;
   &::after {
     content: "";
@@ -112,6 +111,10 @@
     flex-wrap: wrap;
     margin-left: 20;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 .header-link-tel {
   letter-spacing: 0.02em;
@@ -133,7 +136,7 @@
   margin-bottom: 0;
 
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
+    margin-top: 37px;
   }
 
   &:hover {
@@ -142,11 +145,14 @@
 }
 
 .header-contacts-container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     margin-left: 84px;
+    display: block;
+    padding-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 270px;
+    width: 350px;
   }
 }
 .link-contacts {
@@ -176,6 +182,20 @@
   @media screen and (min-width: 768px) {
     display: flex;
   }
+  @media screen and (min-width: 1200px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
+  }
+
+  color: #212121;
 }
 .header .nav {
   display: flex;
@@ -220,7 +240,7 @@
   height: 100%;
   background: #ffffff;
 
-  padding-top: 48px;
+  margin-top: 13px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
@@ -314,4 +334,24 @@
 
 .links {
   padding-left: 40px;
+}
+
+.header-span {
+  color: #2196f3;
+}
+
+.link-contacts:hover {
+  @media screen and (min-width: 768px) {
+    color: #2196f3;
+  }
+}
+.header-link-contacts > li {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    width: 185px;
+  }
+}
+
+.header-contacts-container .header-item {
+  margin-bottom: 10px;
 }
