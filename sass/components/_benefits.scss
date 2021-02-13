@@ -215,8 +215,13 @@
     display: block;
   }
 }
-.benefits-element:not(:first-child) {
-  @media screen and (min-width: 768px) {
+.benefits-element:not(:nth-child(2n + 1)) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-left: 30px;
+  }
+}
+.benefits-element:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
   }
 }

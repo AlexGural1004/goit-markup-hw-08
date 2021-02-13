@@ -31,7 +31,7 @@
                     <div class="menu-container" id="menu-container" data-menu>
                         <div class="navigations">
                             <ul>
-                                <li class="header-item"><a class="header-link header-link-underline" href="./">Студия</a> </li>
+                                <li class=""><a class="header-link header-link-underline" href="./">Студия</a> </li>
                                 <li class="header-item"><a class="header-link" href="./portfolio.html">Портфолио</a></li>
                                 <li class="header-item"><a class="header-link" href="#">Контакты</a></li>
                             </ul>
@@ -140,19 +140,34 @@
                     
                     <ul class="classes-list">
                         <li class="classes-element">
-                            <img src="./images/coding_app.jpg" alt="coding_application" width="370">
+                            <img 
+                                srcset="./images/coding_app.jpg 1x, ./images/coding_app_2x.jpg 2x"
+                                src="./images/coding_app.jpg" 
+                                alt="coding_application" 
+                                width="370"
+                            >
                             <div class="classes-overlay">
                                 <h3 class="classes-text">Десктопные приложения</h3>
                             </div>
                         </li>
                         <li class="classes-element">
-                            <img src="./images/dev_app.jpg" alt="dev_application" width="370">
+                            <img 
+                                srcset="./images/dev_app.jpg 1x, ./images/dev_app_2x.jpg 2x"
+                                src="./images/dev_app.jpg" 
+                                alt="dev_application" 
+                                width="370"
+                            >
                             <div class="classes-overlay">
                                 <h3 class="classes-text">Мобильные приложения</h3>
                             </div>
                         </li>
                         <li class="classes-element">
-                            <img src="./images/test_app.jpg" alt="test_application" width="370">
+                            <img 
+                                srcset="./images/test_app.jpg 1x, ./images/test_app_2x.jpg 2x"
+                                src="./images/test_app.jpg" 
+                                alt="test_application" 
+                                width="370"
+                            >
                             <div class="classes-overlay">
                                 <h3 class="classes-text">Дизайнерские решения</h3>
                             </div>
@@ -166,7 +181,12 @@
                     <ul class="team-list">
                         <li class="team-item"> 
                             <div class="team-member">
-                                <img class="team-member-photo" src="./images/igor_demianenko.jpg" alt="igor_demianenko" width="260">
+                                <img class="team-member-photo" 
+                                    srcset="./images/igor_demianenko.jpg 1x, ./images/igor_demianenko_2x.jpg 2x"
+                                    src="./images/igor_demianenko.jpg" 
+                                    alt="igor_demianenko" 
+                                    width="260"
+                                >
                                 <h4 class="team-member-name">Игорь Демьяненко</h4>
                                 <p class="team-member-position">Product Designer</p>
                                 <div>
@@ -205,7 +225,12 @@
                         </li>
                         <li class="team-item">
                            <div class="team-member">
-                                <img class="team-member-photo" src="./images/olga_repina.jpg" alt="olga_repina" width="260">
+                                <img class="team-member-photo" 
+                                    srcset="./images/olga_repina.jpg 1x, ./images/olga_repina_2x.jpg 2x"
+                                    src="./images/olga_repina.jpg" 
+                                    alt="olga_repina" 
+                                    width="260"
+                                >
                                 <h4 class="team-member-name">Ольга Репина</h4>
                                 <p class="team-member-position">Frontend Developer</p>
                                 <div>
@@ -244,7 +269,12 @@
                         </li>
                         <li class="team-item">
                             <div class="team-member">
-                                <img class="team-member-photo" src="./images/michail_ermakov.jpg" alt="michail_ermakov" width="260">
+                                <img class="team-member-photo" 
+                                    srcset="./images/michail_ermakov.jpg 1x, ./images/michail_ermakov_2x.jpg 2x"
+                                    src="./images/michail_ermakov.jpg" 
+                                    alt="michail_ermakov" 
+                                    width="260"
+                                >
                                 <h4 class="team-member-name">Николай Тарасов</h4>
                                 <p class="team-member-position">Marketing</p>
                                 <div>
@@ -283,7 +313,12 @@
                         </li>
                         <li class="team-item">
                             <div class="team-member">
-                                <img class="team-member-photo" src="./images/nikolai_tarasov.jpg" alt="nikolai_tarasov" width="260">
+                                <img class="team-member-photo" 
+                                    srcset="./images/nikolai_tarasov.jpg 1x, ./images/nikolai_tarasov_2x.jpg 2x"
+                                    src="./images/nikolai_tarasov.jpg" 
+                                    alt="nikolai_tarasov" 
+                                    width="260"
+                                >
                                 <h4 class="team-member-name">Михаил Ермаков</h4>
                                 <p class="team-member-position">UI Designer</p>
                                 <div>
@@ -324,7 +359,7 @@
                 </div>
             </section> 
             <section class="clients">
-                <div>
+                <div class="container">
                     <h2 class="clients-header">Постоянные клиенты</h2>
                     <ul class="clients-list">
                         <li class="clients-logo">
