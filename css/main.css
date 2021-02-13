@@ -1587,7 +1587,15 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  padding-bottom: 9px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-adress {
+    padding-left: 15px;
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1605,11 +1613,14 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-social-networks {
     margin-right: 93px;
+    margin-bottom: 90px;
   }
 }
 
@@ -1813,24 +1824,31 @@ footer {
 
 .logo-footer {
   display: inline-block;
-  margin-left: 15px;
-  margin-right: 0;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
 }
 
 .contacts-footer {
-  padding-left: 15px;
+  display: inline-block;
   margin: 0;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-footer {
+    padding-left: 15px;
+  }
 }
 
 .footer-mail {
   display: inline-block;
-  margin-top: 9px;
-  margin-bottom: 9px;
-}
-
-.contacts-footer {
-  display: inline-block;
+  margin-bottom: 8px;
 }
 
 .examples-works {
